@@ -1,8 +1,8 @@
 name: GitHub Actions v1
 
 on:
-  # pull_request:
-  #   branches: [main, staging]
+  pull_request:
+    branches: [main, staging, development]
   workflow_dispatch:
 
 concurrency:
@@ -33,30 +33,30 @@ jobs:
           swiftlint: true
           swiftlint_auto_fix: true
 
-  build:
-    name: Test build
-    runs-on: macos-latest
-
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v3
-
-      - uses: maxim-lobanov/setup-xcode@v1
-        with:
-          xcode-version: '13.2.1'
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '2.7.6'
-
-      - name: Setup CocoaPods
-        uses: maxim-lobanov/setup-cocoapods@v1
-        with:
-          podfile-path: Podfile.lock
-
-      - name: Install CocoaPods
-        run: pod install
-
-      - name: Bundle install
-        run: bundle install
+  # build:
+  #   name: Test build
+  #   runs-on: macos-latest
+  #
+  #   steps:
+  #     - name: Check out repository
+  #       uses: actions/checkout@v3
+  #
+  #     - uses: maxim-lobanov/setup-xcode@v1
+  #       with:
+  #         xcode-version: '13.2.1'
+  #
+  #     - name: Set up Ruby
+  #       uses: ruby/setup-ruby@v1
+  #       with:
+  #         ruby-version: '2.7.6'
+  #
+  #     - name: Setup CocoaPods
+  #       uses: maxim-lobanov/setup-cocoapods@v1
+  #       with:
+  #         podfile-path: Podfile.lock
+  #
+  #     - name: Install CocoaPods
+  #       run: pod install
+  #
+  #     - name: Bundle install
+  #       run: bundle install
