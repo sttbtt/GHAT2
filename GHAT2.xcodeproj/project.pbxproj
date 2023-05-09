@@ -12,7 +12,21 @@
 		F130E2552A059A5200FEA331 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130E2542A059A5200FEA331 /* ContentView.swift */; };
 		F130E2572A059A5200FEA331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F130E2562A059A5200FEA331 /* Assets.xcassets */; };
 		F130E25A2A059A5200FEA331 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F130E2592A059A5200FEA331 /* Preview Assets.xcassets */; };
+		F16549E92A09E8F100CCA98B /* UnitTestingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16549E82A09E8F100CCA98B /* UnitTestingViewModel.swift */; };
+		F16549EB2A09E93200CCA98B /* UnitTestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16549EA2A09E93200CCA98B /* UnitTestingView.swift */; };
+		F16549F32A09EA4500CCA98B /* GHAT2_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16549F22A09EA4500CCA98B /* GHAT2_Tests.swift */; };
+		F16549FA2A09EB3100CCA98B /* UnitTestingViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16549F92A09EB3100CCA98B /* UnitTestingViewModel_Tests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F16549F42A09EA4500CCA98B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F130E2472A059A5100FEA331 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F130E24E2A059A5200FEA331;
+			remoteInfo = GHAT2;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		05CE409FB2EF6C84B929CE81 /* Pods_GHAT2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GHAT2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,6 +37,11 @@
 		F130E2542A059A5200FEA331 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F130E2562A059A5200FEA331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F130E2592A059A5200FEA331 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F16549E82A09E8F100CCA98B /* UnitTestingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingViewModel.swift; sourceTree = "<group>"; };
+		F16549EA2A09E93200CCA98B /* UnitTestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingView.swift; sourceTree = "<group>"; };
+		F16549F02A09EA4500CCA98B /* GHAT2_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GHAT2_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F16549F22A09EA4500CCA98B /* GHAT2_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHAT2_Tests.swift; sourceTree = "<group>"; };
+		F16549F92A09EB3100CCA98B /* UnitTestingViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingViewModel_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +50,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9DD96CCD389735AE4955D14 /* Pods_GHAT2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F16549ED2A09EA4500CCA98B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,7 +77,6 @@
 				9CF7136AD8E878FD3436BD4A /* Pods-GHAT2.debug.xcconfig */,
 				4315877AA8003785DBBE08DE /* Pods-GHAT2.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -59,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				F130E2512A059A5200FEA331 /* GHAT2 */,
+				F16549F12A09EA4500CCA98B /* GHAT2_Tests */,
 				F130E2502A059A5200FEA331 /* Products */,
 				8FED35A51949040D4BA50F65 /* Pods */,
 				237D179381FC880B6DC4931F /* Frameworks */,
@@ -69,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				F130E24F2A059A5200FEA331 /* GHAT2.app */,
+				F16549F02A09EA4500CCA98B /* GHAT2_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +105,8 @@
 			children = (
 				F130E2522A059A5200FEA331 /* GHAT2App.swift */,
 				F130E2542A059A5200FEA331 /* ContentView.swift */,
+				F16549EA2A09E93200CCA98B /* UnitTestingView.swift */,
+				F16549E82A09E8F100CCA98B /* UnitTestingViewModel.swift */,
 				F130E2562A059A5200FEA331 /* Assets.xcassets */,
 				F130E2582A059A5200FEA331 /* Preview Content */,
 			);
@@ -90,6 +119,15 @@
 				F130E2592A059A5200FEA331 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F16549F12A09EA4500CCA98B /* GHAT2_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F16549F22A09EA4500CCA98B /* GHAT2_Tests.swift */,
+				F16549F92A09EB3100CCA98B /* UnitTestingViewModel_Tests.swift */,
+			);
+			path = GHAT2_Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,6 +152,24 @@
 			productReference = F130E24F2A059A5200FEA331 /* GHAT2.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F16549EF2A09EA4500CCA98B /* GHAT2_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F16549F62A09EA4500CCA98B /* Build configuration list for PBXNativeTarget "GHAT2_Tests" */;
+			buildPhases = (
+				F16549EC2A09EA4500CCA98B /* Sources */,
+				F16549ED2A09EA4500CCA98B /* Frameworks */,
+				F16549EE2A09EA4500CCA98B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F16549F52A09EA4500CCA98B /* PBXTargetDependency */,
+			);
+			name = GHAT2_Tests;
+			productName = GHAT2_Tests;
+			productReference = F16549F02A09EA4500CCA98B /* GHAT2_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -126,6 +182,10 @@
 				TargetAttributes = {
 					F130E24E2A059A5200FEA331 = {
 						CreatedOnToolsVersion = 14.3;
+					};
+					F16549EF2A09EA4500CCA98B = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = F130E24E2A059A5200FEA331;
 					};
 				};
 			};
@@ -143,6 +203,7 @@
 			projectRoot = "";
 			targets = (
 				F130E24E2A059A5200FEA331 /* GHAT2 */,
+				F16549EF2A09EA4500CCA98B /* GHAT2_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -154,6 +215,13 @@
 			files = (
 				F130E25A2A059A5200FEA331 /* Preview Assets.xcassets in Resources */,
 				F130E2572A059A5200FEA331 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F16549EE2A09EA4500CCA98B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,12 +274,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F16549E92A09E8F100CCA98B /* UnitTestingViewModel.swift in Sources */,
+				F16549EB2A09E93200CCA98B /* UnitTestingView.swift in Sources */,
 				F130E2552A059A5200FEA331 /* ContentView.swift in Sources */,
 				F130E2532A059A5200FEA331 /* GHAT2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F16549EC2A09EA4500CCA98B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F16549F32A09EA4500CCA98B /* GHAT2_Tests.swift in Sources */,
+				F16549FA2A09EB3100CCA98B /* UnitTestingViewModel_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F16549F52A09EA4500CCA98B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F130E24E2A059A5200FEA331 /* GHAT2 */;
+			targetProxy = F16549F42A09EA4500CCA98B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F130E25B2A059A5200FEA331 /* Debug */ = {
@@ -388,6 +475,42 @@
 			};
 			name = Release;
 		};
+		F16549F72A09EA4500CCA98B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5T2U5H555H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.scottbennett.GHAT2-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GHAT2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GHAT2";
+			};
+			name = Debug;
+		};
+		F16549F82A09EA4500CCA98B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5T2U5H555H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.scottbennett.GHAT2-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GHAT2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GHAT2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -405,6 +528,15 @@
 			buildConfigurations = (
 				F130E25E2A059A5200FEA331 /* Debug */,
 				F130E25F2A059A5200FEA331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F16549F62A09EA4500CCA98B /* Build configuration list for PBXNativeTarget "GHAT2_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F16549F72A09EA4500CCA98B /* Debug */,
+				F16549F82A09EA4500CCA98B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
