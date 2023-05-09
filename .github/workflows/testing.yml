@@ -15,6 +15,8 @@ jobs:
 
       # - name: Build
       #   run: xcodebuild -workspace GHAT2.xcworkspace -scheme GHAT2 -configuration Release -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14'
-
+      - name: "Displays Xcode current version"
+        run: sudo xcode-select -p
+        
       - name: Run tests
         run: xcodebuild -workspace GHAT2.xcworkspace -scheme GHAT2 -sdk iphonesimulator -destination "platform=iOS Simulator,OS=16.4,name=iPhone 14'" test
