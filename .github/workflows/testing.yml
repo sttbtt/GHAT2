@@ -10,6 +10,18 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: swift-actions/setup-swift@v1
+
+      - name: Install Homebrew
+        run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+      - name: Setup CocoaPods
+        uses: maxim-lobanov/setup-cocoapods@v1
+        with:
+          podfile-path: Podfile.lock
+
+      - name: Install CocoaPods
+        run: pod install
+
       - name: Build
         run: swift build
       - name: Run tests
