@@ -14,7 +14,7 @@ jobs:
         run: pod install
 
       - name: Build
-        run: xcodebuild -workspace GHAT2.xcworkspace -scheme GHAT2 -configuration Release -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12'
+        run: xcodebuild -workspace GHAT2.xcworkspace -scheme GHAT2 -configuration Release -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14'
 
       - name: Run tests
         run: xcodebuild -workspace GHAT2.xcworkspace -scheme GHAT2 -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14 Pro' test
