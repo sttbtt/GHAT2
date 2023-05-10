@@ -13,6 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: List directory
         run: ls
 
       # - name: Install CocoaPods
