@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B9DD96CCD389735AE4955D14 /* Pods_GHAT2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CE409FB2EF6C84B929CE81 /* Pods_GHAT2.framework */; };
 		F130E2532A059A5200FEA331 /* GHAT2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130E2522A059A5200FEA331 /* GHAT2App.swift */; };
 		F130E2552A059A5200FEA331 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130E2542A059A5200FEA331 /* ContentView.swift */; };
 		F130E2572A059A5200FEA331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F130E2562A059A5200FEA331 /* Assets.xcassets */; };
@@ -29,9 +28,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05CE409FB2EF6C84B929CE81 /* Pods_GHAT2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GHAT2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4315877AA8003785DBBE08DE /* Pods-GHAT2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHAT2.release.xcconfig"; path = "Target Support Files/Pods-GHAT2/Pods-GHAT2.release.xcconfig"; sourceTree = "<group>"; };
-		9CF7136AD8E878FD3436BD4A /* Pods-GHAT2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHAT2.debug.xcconfig"; path = "Target Support Files/Pods-GHAT2/Pods-GHAT2.debug.xcconfig"; sourceTree = "<group>"; };
 		F130E24F2A059A5200FEA331 /* GHAT2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHAT2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F130E2522A059A5200FEA331 /* GHAT2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHAT2App.swift; sourceTree = "<group>"; };
 		F130E2542A059A5200FEA331 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,7 +45,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9DD96CCD389735AE4955D14 /* Pods_GHAT2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,31 +58,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		237D179381FC880B6DC4931F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				05CE409FB2EF6C84B929CE81 /* Pods_GHAT2.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8FED35A51949040D4BA50F65 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9CF7136AD8E878FD3436BD4A /* Pods-GHAT2.debug.xcconfig */,
-				4315877AA8003785DBBE08DE /* Pods-GHAT2.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		F130E2462A059A5100FEA331 = {
 			isa = PBXGroup;
 			children = (
 				F130E2512A059A5200FEA331 /* GHAT2 */,
 				F16549F12A09EA4500CCA98B /* GHAT2_Tests */,
 				F130E2502A059A5200FEA331 /* Products */,
-				8FED35A51949040D4BA50F65 /* Pods */,
-				237D179381FC880B6DC4931F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,11 +113,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F130E25D2A059A5200FEA331 /* Build configuration list for PBXNativeTarget "GHAT2" */;
 			buildPhases = (
-				C1CAED5FB1F7F9928E7C4567 /* [CP] Check Pods Manifest.lock */,
 				F130E24B2A059A5200FEA331 /* Sources */,
 				F130E24C2A059A5200FEA331 /* Frameworks */,
 				F130E24D2A059A5200FEA331 /* Resources */,
-				99737C8D22D1953D954967D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -226,48 +200,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		99737C8D22D1953D954967D0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GHAT2/Pods-GHAT2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GHAT2/Pods-GHAT2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GHAT2/Pods-GHAT2-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C1CAED5FB1F7F9928E7C4567 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GHAT2-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F130E24B2A059A5200FEA331 /* Sources */ = {
@@ -417,7 +349,6 @@
 		};
 		F130E25E2A059A5200FEA331 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CF7136AD8E878FD3436BD4A /* Pods-GHAT2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -450,7 +381,6 @@
 		};
 		F130E25F2A059A5200FEA331 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4315877AA8003785DBBE08DE /* Pods-GHAT2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
