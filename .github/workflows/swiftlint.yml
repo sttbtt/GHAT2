@@ -16,8 +16,12 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
-      - name: SwiftLint
-        run: swiftlint --fix
+      - name: GitHub Action for SwiftLint with --fix
+        uses: norio-nomura/action-swiftlint@3.2.1
+        with:
+          args: --fix
+      # - name: SwiftLint
+      #   run: swiftlint --fix
       # - name: GitHub Action for SwiftLint
       #   uses: norio-nomura/action-swiftlint@3.2.1
       # - name: GitHub Action for SwiftLint with --strict
