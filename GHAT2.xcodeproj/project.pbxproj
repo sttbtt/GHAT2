@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B532279B6B7F665031EC25B1 /* Pods_GHAT2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 159E17571F3BA99ADFA4D556 /* Pods_GHAT2.framework */; };
 		F130E2532A059A5200FEA331 /* GHAT2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130E2522A059A5200FEA331 /* GHAT2App.swift */; };
 		F130E2552A059A5200FEA331 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F130E2542A059A5200FEA331 /* ContentView.swift */; };
 		F130E2572A059A5200FEA331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F130E2562A059A5200FEA331 /* Assets.xcassets */; };
@@ -29,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		159E17571F3BA99ADFA4D556 /* Pods_GHAT2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GHAT2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90BCCC658BFC5975579AC3E3 /* Pods-GHAT2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHAT2.debug.xcconfig"; path = "Target Support Files/Pods-GHAT2/Pods-GHAT2.debug.xcconfig"; sourceTree = "<group>"; };
+		D53AE6F0F1EDB7525AD2AC49 /* Pods-GHAT2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHAT2.release.xcconfig"; path = "Target Support Files/Pods-GHAT2/Pods-GHAT2.release.xcconfig"; sourceTree = "<group>"; };
 		F130E24F2A059A5200FEA331 /* GHAT2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHAT2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F130E2522A059A5200FEA331 /* GHAT2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHAT2App.swift; sourceTree = "<group>"; };
 		F130E2542A059A5200FEA331 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F17E38D82A0C1D0600F0C33B /* LoremSwiftum in Frameworks */,
+				B532279B6B7F665031EC25B1 /* Pods_GHAT2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +65,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		192BCF4FB1C106248C678C10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				159E17571F3BA99ADFA4D556 /* Pods_GHAT2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9C9E46014E6607B480ADC3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90BCCC658BFC5975579AC3E3 /* Pods-GHAT2.debug.xcconfig */,
+				D53AE6F0F1EDB7525AD2AC49 /* Pods-GHAT2.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F130E2462A059A5100FEA331 = {
 			isa = PBXGroup;
 			children = (
 				F130E2512A059A5200FEA331 /* GHAT2 */,
 				F16549F12A09EA4500CCA98B /* GHAT2_Tests */,
 				F130E2502A059A5200FEA331 /* Products */,
+				E9C9E46014E6607B480ADC3F /* Pods */,
+				192BCF4FB1C106248C678C10 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F130E25D2A059A5200FEA331 /* Build configuration list for PBXNativeTarget "GHAT2" */;
 			buildPhases = (
+				AE3D7A22FB18A02091A7D3AF /* [CP] Check Pods Manifest.lock */,
 				F130E24B2A059A5200FEA331 /* Sources */,
 				F130E24C2A059A5200FEA331 /* Frameworks */,
 				F130E24D2A059A5200FEA331 /* Resources */,
+				3C8DBFBC8289029178BA83AC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,7 +205,7 @@
 			);
 			mainGroup = F130E2462A059A5100FEA331;
 			packageReferences = (
-				F17E38D62A0C1D0600F0C33B /* XCRemoteSwiftPackageReference "LoremSwiftum" */,
+				F17E38D62A0C1D0600F0C33B /* XCRemoteSwiftPackageReference "LoremSwiftum.git" */,
 			);
 			productRefGroup = F130E2502A059A5200FEA331 /* Products */;
 			projectDirPath = "";
@@ -208,6 +235,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C8DBFBC8289029178BA83AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GHAT2/Pods-GHAT2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GHAT2/Pods-GHAT2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GHAT2/Pods-GHAT2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE3D7A22FB18A02091A7D3AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GHAT2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F130E24B2A059A5200FEA331 /* Sources */ = {
@@ -357,6 +426,7 @@
 		};
 		F130E25E2A059A5200FEA331 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90BCCC658BFC5975579AC3E3 /* Pods-GHAT2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -394,6 +464,7 @@
 		};
 		F130E25F2A059A5200FEA331 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D53AE6F0F1EDB7525AD2AC49 /* Pods-GHAT2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -516,7 +587,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F17E38D62A0C1D0600F0C33B /* XCRemoteSwiftPackageReference "LoremSwiftum" */ = {
+		F17E38D62A0C1D0600F0C33B /* XCRemoteSwiftPackageReference "LoremSwiftum.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/lukaskubanek/LoremSwiftum.git";
 			requirement = {
@@ -529,7 +600,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		F17E38D72A0C1D0600F0C33B /* LoremSwiftum */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F17E38D62A0C1D0600F0C33B /* XCRemoteSwiftPackageReference "LoremSwiftum" */;
+			package = F17E38D62A0C1D0600F0C33B /* XCRemoteSwiftPackageReference "LoremSwiftum.git" */;
 			productName = LoremSwiftum;
 		};
 /* End XCSwiftPackageProductDependency section */
