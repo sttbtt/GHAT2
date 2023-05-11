@@ -7,12 +7,12 @@ on:
   push:
     branches: [ development ]
 
-concurrency:
-  group: build-${{ github.event.pull_request.number || github.ref }}
-  cancel-in-progress: true
+  concurrency:
+    group: build-${{ github.event.pull_request.number || github.ref }}
+    cancel-in-progress: true
 
   jobs:
-    SwiftLint:
+    swiftlint:
       # runs-on: ubuntu-latest
       runs-on: macos-latest
       steps:
