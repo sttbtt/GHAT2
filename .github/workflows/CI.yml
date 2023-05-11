@@ -13,7 +13,6 @@ concurrency:
 
 jobs:
   swiftlint:
-    # runs-on: ubuntu-latest
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
@@ -53,12 +52,12 @@ jobs:
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
           cp $PP_PATH ~/Library/MobileDevice/Provisioning\ Profiles
 
-      # - name: Install CocoaPods
-      #   run: pod install
+      - name: Install CocoaPods
+        run: pod install
 
       - name: Build
-        run: xcodebuild
-        # run: xcodebuild -workspace GHAT2.xcworkspace -scheme GHAT2 -configuration Release -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 14"
+        # run: xcodebuild
+        run: xcodebuild -workspace GHAT2.xcworkspace -scheme GHAT2 -configuration Release -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 14"
 
       - name: Run tests
         run: xcodebuild -scheme GHAT2 -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 14" test
