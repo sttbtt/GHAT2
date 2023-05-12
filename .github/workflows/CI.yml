@@ -4,8 +4,8 @@ on:
   # pull_request:
   #   branches: [main, staging, development]
   workflow_dispatch:
-  # push:
-  #   branches: [ development ]
+  push:
+    branches: [ development ]
 
 concurrency:
   group: build-${{ github.event.pull_request.number || github.ref }}
