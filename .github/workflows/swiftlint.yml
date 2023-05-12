@@ -2,8 +2,8 @@ name: SwiftLint
 
 on:
   workflow_dispatch:
-  # push:
-  #   branches: [ development ]
+  push:
+    branches: [ development ]
   # pull_request:
   #   paths:
   #     - '.github/workflows/swiftlint.yml'
@@ -12,8 +12,8 @@ on:
 
 jobs:
   SwiftLint:
-    # runs-on: ubuntu-latest
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
+    # runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
       # - name: GitHub Action for SwiftLint with --fix
@@ -21,8 +21,8 @@ jobs:
       #   with:
       #     args: --fix
 
-      - name: SwiftLint
-        run: swiftlint --fix
+      # - name: SwiftLint
+      #   run: swiftlint --fix
 
       # - name: Lint Action
       #   uses: wearerequired/lint-action@v2.0.0
@@ -34,9 +34,9 @@ jobs:
       # - name: GitHub Action for SwiftLint
       #   uses: norio-nomura/action-swiftlint@3.2.1
       # - name: GitHub Action for SwiftLint with --strict
-      #   uses: norio-nomura/action-swiftlint@3.2.1
-      #   with:
-      #     args: --strict
+        uses: norio-nomura/action-swiftlint@3.2.1
+        with:
+          args: --strict
       # - name: GitHub Action for SwiftLint (Only files changed in the PR)
       #   uses: norio-nomura/action-swiftlint@3.2.1
       #   env:
