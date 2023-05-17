@@ -1,8 +1,8 @@
 name: Swift Continuous Integration
 
 on:
-  pull_request:
-    branches: [main, staging, development]
+  # pull_request:
+  #   branches: [main, staging, development]
   workflow_dispatch:
   # push:
   #   branches: [ development ]
