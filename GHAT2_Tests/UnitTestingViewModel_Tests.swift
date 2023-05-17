@@ -20,20 +20,20 @@ final class UnitTestingViewModel_Tests: XCTestCase {
 
     func test_UnitTestingViewModel_isPremium_shouldBeTrue() throws {
         let userIsPremium: Bool = true
-        
+
         let vm = UnitTestingViewModel(isPremium: userIsPremium)
-        
+
         XCTAssertTrue(vm.isPremium)
-        
+
     }
-    
+
     func test_UnitTestingViewModel_isPremium_shouldBeFalse() throws {
         let userIsPremium: Bool = false
-        
+
         let vm = UnitTestingViewModel(isPremium: userIsPremium)
-        
+
         XCTAssertFalse(vm.isPremium)
-        
+
     }
 
 }

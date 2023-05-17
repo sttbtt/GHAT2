@@ -2,8 +2,8 @@ name: SwiftLint
 
 on:
   workflow_dispatch:
-  push:
-    branches: [ development ]
+  # push:
+  #   branches: [ development ]
   # pull_request:
   #   paths:
   #     - '.github/workflows/swiftlint.yml'

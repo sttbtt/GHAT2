@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct UnitTestingView: View {
-    
+
     @StateObject private var vm: UnitTestingViewModel
-    
+
     init(isPremium: Bool) {
         _vm = StateObject(wrappedValue: UnitTestingViewModel(isPremium: isPremium))
     }
-    
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
