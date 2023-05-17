@@ -1,11 +1,15 @@
 name: Swift Continuous Integration
 
 on:
-  # pull_request:
-  #   branches: [main, staging, development]
+  pull_request:
+    branches: [ main, staging, development ]
+    # paths:
+    #   - '.github/workflows/swiftlint.yml'
+    #   - '.swiftlint.yml'
+    #   - '**/*.swift'
+  push:
+    branches: [ main, staging, development ]
   workflow_dispatch:
-  # push:
-  #   branches: [ development ]
 
 concurrency:
   group: build-${{ github.event.pull_request.number || github.ref }}
@@ -13,11 +17,11 @@ concurrency:
 
 jobs:
   swiftlint:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: SwiftLint
-        run: swiftlint --fix
+      - name: GitHub Action for SwiftLint
+        uses: norio-nomura/action-swiftlint@master
 
   build:
     runs-on: macos-latest
