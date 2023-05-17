@@ -9,12 +9,11 @@ on:
   #     - '.github/workflows/swiftlint.yml'
   #     - '.swiftlint.yml'
   #     - '**/*.swift'
-  pull_request:
-    paths:
-      - '.github/workflows/swiftlint.yml'
-      - '.swiftlint.yml'
-      - '**/*.swift'
-  workflow_dispatch:
+  # pull_request:
+  #   paths:
+  #     - '.github/workflows/swiftlint.yml'
+  #     - '.swiftlint.yml'
+  #     - '**/*.swift'
 
 jobs:
   SwiftLint:
