@@ -1,20 +1,51 @@
 name: SwiftLint
 
 on:
-  pull_request:
-    paths:
-      - '.github/workflows/swiftlint.yml'
-      - '.swiftlint.yml'
-      - '**/*.swift'
   workflow_dispatch:
+  # push:
+  #   branches: [ development ]
+  # pull_request:
+  #   paths:
+  #     - '.github/workflows/swiftlint.yml'
+  #     - '.swiftlint.yml'
+  #     - '**/*.swift'
+  # pull_request:
+  #   paths:
+  #     - '.github/workflows/swiftlint.yml'
+  #     - '.swiftlint.yml'
+  #     - '**/*.swift'
 
 jobs:
   SwiftLint:
     runs-on: ubuntu-latest
+    # runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: GitHub Action for SwiftLint
+      - uses: actions/checkout@v3
+      # - name: GitHub Action for SwiftLint with --fix
+      #   uses: norio-nomura/action-swiftlint@3.2.1
+      #   with:
+      #     args: --fix
+
+      # - name: SwiftLint
+      #   run: swiftlint --fix
+
+      # - name: Lint Action
+      #   uses: wearerequired/lint-action@v2.0.0
+      #   with:
+      #     auto_fix: true
+      #     swiftlint: true
+      #     swiftlint_auto_fix: true
+
+      # - name: GitHub Action for SwiftLint
+      #   uses: norio-nomura/action-swiftlint@3.2.1
+      - name: GitHub Action for SwiftLint with --strict
         uses: norio-nomura/action-swiftlint@3.2.1
+        with:
+          args: --strict
+#     steps:
+#       - uses: actions/checkout@v1
+#       - name: GitHub Action for SwiftLint
+#         uses: norio-nomura/action-swiftlint@3.2.1
       # - name: GitHub Action for SwiftLint with --strict
       #   uses: norio-nomura/action-swiftlint@3.2.1
       #   with:
